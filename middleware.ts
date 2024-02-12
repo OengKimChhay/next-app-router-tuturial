@@ -5,10 +5,11 @@ export default createMiddleware({
 	locales: ['en', 'kh'],
 
 	// Used when no locale matches
-	defaultLocale: 'en',
+	defaultLocale: 'kh',
+	localePrefix: 'never',
 });
 
 export const config = {
 	// Match only internationalized pathnames
-	matcher: ['/', '/(kh|en)/:path*'],
+	matcher: ['/', '/'],
 };
